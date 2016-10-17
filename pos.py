@@ -2,8 +2,8 @@ import sys
 
 def main():
     if len(sys.argv) < 3:
-	print "Usage: python pos.py <tagger output> <reference file>"
-	exit(1)
+        print "Usage: python pos.py <tagger output> <reference file>"
+    exit(1)
 
     infile = open(sys.argv[1], "r")
     user_sentences = infile.readlines()
@@ -33,4 +33,5 @@ def main():
     print "Percent correct tags:", score
 
 
-if __name__ == "__main__": main()
+if __name__ == "__main__": 
+    main()
